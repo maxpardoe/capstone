@@ -7,19 +7,25 @@ Due to my love of sport I have always wanted to get into sports analytics and sp
 
 ## Step 1 - Dataset and Data Collection 
 
-Dataset:
+### Dataset:
 
 I collected my data through a website called fbref.com. This is a website that has varying levels of in depth statistics. With the most consistently in depth statistics being Europe’s top 5 leagues and the MLS. 
 
-Data Collection:
+### Data Collection: Clean Scrape.ipynb
 
 I then scraped each match individually and obtained both the attack and defence, including goalkeeper, statistics for the home and away teams. I did this through pandas pd.read_html function as all the data was in a table format. Then using Selenium WebDriver I also scraped some metadata from each game. This included the captains, the referee officiating, the attendance and many others. This was for over 7500 games. 
 This left me with 4 datasets, one for each of the attacking, defensive, and goalkeeping statistics 
 of each player for every game and one for the metadata of each game. 
 
-## Step 2 - Feature Engineering
+## Step 2 - Cleaning and Feature Engineering
 
-After cleaning my dataset of the irrelevant data I had to obtain the form of the players. I did this through creating the exponentially weighted mean of each player’s in-game statistics over their last 10 games. I was able to do this through grouping by each unique player in my dataset and iterating through, gathering the EWM of all their in game stats and then joining their non-numeric stats (name, team etc.) back. I also shifted down their form so their form is from previous games.  
+### Cleaning 
+
+Cleaning was a fairly straightforward task, due to the fact that I was scraping from other datasets. However, there were a few duplicated games that were scraped, some of which that had different game IDs. This would cause problems had I not discovered this as it would have meant that players form would have been incorectly judged. However, I was able to remove these duplications. There were also some players who, for every game they played, only had NaN values. Due to this I decided they were irrelvant and dropped all of these players from both the defence and attack dataframes. 
+
+### Feature Engineering - feature_engineering.ipynb
+
+Now that I had clean dataframes I had to obtain the form of the players. I did this through creating the exponentially weighted mean of each player’s in-game statistics over their last 10 games. I was able to do this through grouping by each unique player in my dataset and iterating through, gathering the EWM of all their in game stats and then joining their non-numeric stats (name, team etc.) back. I also shifted down their form so their form is from previous games.  
 Now that I had the form of each player I then concatenated each player back into their respective dataframes, so for the attacking stats they would go back into the attacking dataframe etc. After that I categorised the position of each player so that the positions were in a similar order. I then grouped by team and game ID and took the most attacking and most defensive 7 players from each team. 
 My next step was to set it out so that each row was in a head to head format, ie attack vs defence plus metadata on each row. I did it through this function below. 
 
