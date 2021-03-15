@@ -27,6 +27,7 @@ What this function does is it groups by game_id and team, I then .ravel() each g
 Step 3 - Exploratory Data Analysis 
 
 Home Advantage
+
 Now that I had my fully sorted dataframe I was able to have a look at what features could lead to a clean sheet. I found that there was quite a large difference between the chances of keeping a home clean sheet and an away clean sheet. There was also quite a large variation in that likelihood between the 5 leagues, with the likelihood of keeping an away clean sheet in the MLS being the most unlikely. I concluded that the reason for this being potentially due to  the distance that each team would have to travel would be considerably greater than that in other leagues so travel time and logistics are much smaller and far simpler than that in the US, moreover, less away fans would travel to MLS games as the distance is so great so the away team would get less support.
 
 Step 4 - Predictive Modeling
