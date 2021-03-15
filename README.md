@@ -28,10 +28,14 @@ Step 3 - Exploratory Data Analysis
 
 Home Advantage
 
-Now that I had my fully sorted dataframe I was able to have a look at what features could lead to a clean sheet. I found that there was quite a large difference between the chances of keeping a home clean sheet and an away clean sheet. There was also quite a large variation in that likelihood between the 5 leagues, with the likelihood of keeping an away clean sheet in the MLS being the most unlikely. I concluded that the reason for this being potentially due to  the distance that each team would have to travel would be considerably greater than that in other leagues so travel time and logistics are much smaller and far simpler than that in the US, moreover, less away fans would travel to MLS games as the distance is so great so the away team would get less support.
+Now that I had my fully sorted dataframe I was able to have a look at what features could lead to a clean sheet. I found that there was quite a large difference between the chances of keeping a home clean sheet and an away clean sheet. There was also quite a large variation in that likelihood between the 5 leagues, with the likelihood of keeping an away clean sheet in the MLS being the most unlikely. I concluded that the potential reason for this being due to the distance that each team would have to travel would be considerably greater than that in other leagues so travel time and logistics are much smaller and far simpler than that in US. Moreover, more often than not there are no away fans that travel, and so there is no support for th away team, thus, creating an even greater home advantage.
 
 Step 4 - Predictive Modeling
 
 In order to include my metadata, which is in string format, I dummified the features, these included the manager, the teams, the referee and others. 
 I first started with a simple logistic regression model. However, these were either not reaching or were below baseline. 
 I moved on to decision trees. This showed some promise as it brought my score closer to the baseline after implementing an AdaBoost. I then put in place some principal component analysis and it took the results above the baseline to 0.7351. 
+
+Step 5 - Conclusion 
+
+In conclusion, I am able to say that I have been able to achieve my projet goal - to predict clean sheets above the baseline rate, even though it was only a little increase on the baseline. Some things that I would do differently is that I would perhaps try and get more meta-data, such as, whether or not the game was a derby match. I would also have liked to obtain the league positions of each team at the point of the game, as a big difference between the two teams could have had an effect on the clean sheet outcome. 
