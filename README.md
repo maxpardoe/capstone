@@ -1,5 +1,5 @@
-# capstone
-Predicting clean sheets in Europe's top 5 leagues and MLS 
+# Capstone
+## Predicting clean sheets in Europe's top 5 leagues and MLS 
 
 ## Goals of the Project
 
@@ -48,6 +48,10 @@ Now that I had my fully sorted dataframe I was able to have a look at what featu
 In order to include my metadata, which is in string format, I dummified the features, these included the manager, the teams, the referee and others. 
 I first started with a simple logistic regression model. However, these were either not reaching or were below baseline. 
 I moved on to decision trees. This showed some promise as it brought my score closer to the baseline after implementing an AdaBoost. I then put in place some principal component analysis and it took the results above the baseline to 0.7351. 
+
+For Logistic Regression Adaboost [notebook](https://github.com/maxpardoe/capstone/blob/main/LR%20PCA.ipynb)
+
+For DecisionTree AdaBoost [notebook](https://github.com/maxpardoe/capstone/blob/main/Final%20Modelling.ipynb)
 
 ## Step 5 - Conclusion 
 
