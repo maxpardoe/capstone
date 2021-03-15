@@ -9,7 +9,7 @@ Due to my love of sport I have always wanted to get into sports analytics and sp
 
 ### Dataset:
 
-I collected my data through a website called ![FBREF](https://fbref.com/en/). This is a website that has varying levels of in depth statistics. With the most consistently in depth statistics being Europe’s top 5 leagues and the MLS. 
+I collected my data through a website called [FBREF](https://fbref.com/en/). This is a website that has varying levels of in depth statistics. With the most consistently in depth statistics being Europe’s top 5 leagues and the MLS. 
 
 ### Data Collection: 
 Clean Scrape.ipynb
