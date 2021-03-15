@@ -1,6 +1,5 @@
 # capstone
 Predicting clean sheets in Europe's top 5 leagues and MLS 
-Predicting Clean Sheets in Europe’s top 5 leagues and MLS
 
 Goals of the Project
 Due to my love of sport I have always wanted to get into sports analytics and sports predicting. Therefore, due to this I decided to do my final capstone project on predicting clean sheets based on the 7 most attacking player’s form and 7 most defensive player’s form of the two teams playing each other. The goal for my project was to predict clean sheets above the baseline rate. 
