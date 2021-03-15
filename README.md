@@ -1,5 +1,4 @@
-# Capstone
-## Predicting clean sheets in Europe's top 5 leagues and MLS 
+# Predicting clean sheets in Europe's top 5 leagues and MLS 
 
 ## Goals of the Project
 
