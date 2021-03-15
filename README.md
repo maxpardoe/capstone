@@ -8,8 +8,11 @@ Due to my love of sport I have always wanted to get into sports analytics and sp
 Step 1 - Dataset and Data Collection 
 
 Dataset:
-I collected my data through a website called FBREF. This is a website that has varying levels of in depth statistics. With the most consistently in depth statistics being Europe’s top 5 leagues and the MLS. 
+
+I collected my data through a website called fbref.com. This is a website that has varying levels of in depth statistics. With the most consistently in depth statistics being Europe’s top 5 leagues and the MLS. 
+
 Data Collection:
+
 I then scraped each match individually and obtained both the attack and defence, including goalkeeper, statistics for the home and away teams. I did this through pandas pd.read_html function as all the data was in a table format. Then using Selenium WebDriver I also scraped some metadata from each game. This included the captains, the referee officiating, the attendance and many others. This was for over 7500 games. 
 This left me with 4 datasets, one for each of the attacking, defensive, and goalkeeping statistics 
 of each player for every game and one for the metadata of each game. 
@@ -38,4 +41,4 @@ I moved on to decision trees. This showed some promise as it brought my score cl
 
 Step 5 - Conclusion 
 
-In conclusion, I am able to say that I have been able to achieve my projet goal - to predict clean sheets above the baseline rate, even though it was only a little increase on the baseline. Some things that I would do differently is that I would perhaps try and get more meta-data, such as, whether or not the game was a derby match. I would also have liked to obtain the league positions of each team at the point of the game, as a big difference between the two teams could have had an effect on the clean sheet outcome. 
+In conclusion, I am able to say that I have been able to achieve my project goal - to predict clean sheets above the baseline rate, even though it was only a little increase on the baseline. Some things that I would do differently is that I would perhaps try and get more meta-data, such as, whether or not the game was a derby match. I would also have liked to obtain the league positions of each team at the point of the game, as a big difference between the two teams could have had an effect on the clean sheet outcome. 
