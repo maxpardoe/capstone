@@ -1,4 +1,4 @@
-# Predicting clean sheets in Europe's top 5 leagues and MLS 
+# Predicting Clean Sheets in Europe's Top 5 Leagues and MLS 
 
 ## Goals of the Project
 
