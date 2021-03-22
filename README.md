@@ -58,14 +58,14 @@ In conclusion, I am able to say that I have been able to achieve my project goal
 
 ## Step 6 - Evaluation 
 
-Overall, I believe that this was a successful project as I was able to achieve my goal of predicting clean sheets above the baseline rate. However, disappointingly I was unable to factor in certain features that I would have liked to. For example, I was unable to feature the captain data that I scraped for each match, due to my limited time frame I was unable to appropriately engineer a way of to fit this data into my model. However, this is something that I would like to add onto during my future developments.
+Overall, I believe that this was a successful project as I was able to achieve my goal of predicting clean sheets above the baseline rate. However, disappointingly I was unable to factor in certain features that I would have liked to. For example, due to my limited time frame, I was unable to appropriately engineer a way to feature the captain data, that I scraped for each match, into my model. However, this is something that I would like to add onto during my future developments.
 
 Moreover, if I were to do this again, I would also try and attempt to try and engineer a way of creating a feature that relays the difference in points/table positioning during that particular game week. This is because I feel this could be another strong indication as to whether a team would be more likely to achieve a clean sheet or not. 
 
 ## Key Learnings 
 
 ### Functions
-Creating appropriate functions in order for me to come back to parts later and easily repeat processes without having to re-order my code. This is crucial as it saves valuable time.
+Creating appropriate functions in order for me to come back to parts later and easily repeat processes without having to re-order my code. This is crucial as it saves valuable time and is a necessary tool when scaling up the process from smaller sub-dataframes onto the full dataframe.
 
 ### Appropriate planning
 Another important lesson that I can take from this project is thoroughly plan how you want the data to look before gathering the data. This saves valuable time on feature engineering and cleaning of the data. This also constitutes of what you are wanting to scrape and so in order to make sure to not have regrets of not scraping something gather as much information as possible and so can always remove data if not needed. 
