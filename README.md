@@ -54,14 +54,13 @@ For DecisionTree AdaBoost [notebook](https://github.com/maxpardoe/capstone/blob/
 
 ## Step 5 - Conclusion 
 
-In conclusion, I am able to say that I have been able to achieve my project goal - to predict clean sheets above the baseline rate, even though it was only a little increase on the baseline. This was through being able to transofrm mathc statistcs in the top 5 European leagues and the MLS into player form, through the use of exponetially weighted means on those statistics for each player. 
+In conclusion, I am able to say that I have been able to achieve my project goal - to predict clean sheets above the baseline rate. This was through transforming the in-game player statistics of every match from 2017 onwards in Europe's top 5 leagues and the MLS into player form. This was done through creating exponentially weighted means of all of those statistics for each player. My model would then weight up the form of the attack vs the defensive form of the two teams to predict whether or not the game would produce a clean sheet or not. 
 
 ## Step 6 - Evaluation 
 
 Overall, I believe that this was a successful project as I was able to achieve my goal of predicting clean sheets above the baseline rate. However, disappointingly I was unable to factor in certain features that I would have liked to. For example, due to my limited time frame, I was unable to appropriately engineer a way to feature the captain data, that I scraped for each match, into my model. However, this is something that I would like to add onto during my future developments.
 
 Moreover, if I were to do this again, I would also try and attempt to try and engineer a way of creating a feature that relays the difference in points/table positioning during that particular game week. This is because I feel this could be another strong indication as to whether a team would be more likely to achieve a clean sheet or not. I would perhaps try and get more meta-data, such as, whether or not the game was a derby match as these particular games are much more frantic and harder to predict as anything can happen in these games. 
-
 
 
 ## Key Learnings 
